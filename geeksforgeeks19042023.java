@@ -42,14 +42,13 @@ Constraints:
 
 public class geeksforgeeks19042023 {
 	public static void main(String[] args) {
-		StringBuffer s = new StringBuffer("10010");
-		int n = s.length(), r = 1, count = 0;
+		StringBuffer s = new StringBuffer("000010000000001");
+		int n = s.length(), r = 7, count = 0;
 		if (r > n)
 			r = n;
 		for (int i = 0; i < n; i++) {
 
 			if (s.charAt(i) == '1') {
-
 				int bf = i - r, af = i + r;
 				if (bf < 0)
 					bf = 0;
@@ -58,11 +57,14 @@ public class geeksforgeeks19042023 {
 				for (int j = bf; j < i; j++) {
 					s.replace(j, j + 1, "1");
 				}
-				for (int j = af; j < af + r; j++) {
-					s.replace(j, j + 1, "1");
+				for (int j = i+1; j < af+1; j++) {
+					if (j > s.length() - 1)
+						break;
+					else
+						s.replace(j, j + 1, "1");
 
 				}
-				i = i + r;
+				i = i + r+1;
 			}
 		} // for loop
 		System.out.println(s);
