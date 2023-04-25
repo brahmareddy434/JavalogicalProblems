@@ -1,7 +1,10 @@
 package p1;
 
 import java.util.StringTokenizer;
-
+/*
+ input :: bmmmnrvv434@gmail.com
+ output:: b*********4@g****.com
+ */
 public class emailsecret {
 	public static void main(String[] args) {
 		String s = "brahma@gmail.com";
@@ -13,7 +16,7 @@ public class emailsecret {
                   st1.replace(i, i+1, "*");
 			}
 		}//for loop end
-		System.out.println(st1);
+
 		//for after @
 		StringTokenizer stt=new StringTokenizer(new String(st2),".");
 		StringBuffer st3 = new StringBuffer(stt.nextToken());
