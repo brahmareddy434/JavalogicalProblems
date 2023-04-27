@@ -43,7 +43,7 @@ Constraints:
 public class geeksforgeeks19042023 {
 	public static void main(String[] args) {
 		StringBuffer s = new StringBuffer("000010000000001");
-		int n = s.length(), r = 7, count = 0;
+		int n = s.length(), r = 2, count = 0;
 		if (r > n)
 			r = n;
 		for (int i = 0; i < n; i++) {
