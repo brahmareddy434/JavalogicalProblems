@@ -1,3 +1,4 @@
+package p1;
 
 public class geeksforgeeks04052023 {
 	public static int maxCoins(int ranges[][]) {
@@ -22,9 +23,9 @@ public class geeksforgeeks04052023 {
 	}
 
 	public static void main(String[] args) {
-		
-		int[][] a={{1,2,3},{1,2,6},{2,3,7}};// TODO Auto-generated method stub
-		int ans=geeksforgeeks04052023.maxCoins(a);
+
+		int[][] a = { { 1, 2, 3 }, { 1, 2, 6 }, { 2, 3, 7 } };// TODO Auto-generated method stub
+		int ans = geeksforgeeks04052023.maxCoins(a);
 		System.out.println(ans);
 
 	}
